@@ -29,6 +29,13 @@ a {
   color: blue;
 }
 
+.opensource {
+  display: block;
+  position: absolute;
+  text-align: center;
+  padding-top: 25px;
+}
+
 .weather-app {
   border: 1px solid blue;
   padding: 20px;
@@ -81,7 +88,4 @@ a {
 #current-location-button {
   background-color: turquoise;
   color: white;
-}
-
-#aktuellesDatum {
 }
