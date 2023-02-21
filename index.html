@@ -40,7 +40,12 @@
               />
             </div>
             <div class="col-3">
-              <button class="form-control shadow-sm" id="current-location-button">Current location</button>
+              <button
+                class="form-control shadow-sm"
+                id="current-location-button"
+              >
+                Current location
+              </button>
             </div>
           </div>
         </form>
@@ -64,38 +69,30 @@
           </div>
         </div>
 
-        <div class="next-five">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="weekdays">Tuesday</div>
-              <i class="fa-solid fa-sun icon-forecast"></i>
-              4°C
-            </div>
-            <div class="col">
-              <div class="weekdays">Wednesday</div>
-              <i class="fa-solid fa-cloud-rain icon-forecast"></i>
-              5°C
-            </div>
-            <div class="col">
-              <div class="weekdays">Thursday</div>
-              <i class="fa-solid fa-wind icon-forecast"></i>
-              6°C
-            </div>
-            <div class="col">
-              <div class="weekdays">Friday</div>
-              <i class="fa-solid fa-cloud-bolt icon-forecast"></i>
-              7°C
-            </div>
-            <div class="col">
-              <div class="weekdays">Saturday</div>
-              <i class="fa-solid fa-snowflake icon-forecast"></i>
-              8°C
+        <div class="weather-forecast">
+          <div class="container">
+            <div class="row">
+              <div class="col-2">
+                <div class="weekdays">Tuesday</div>
+                <i class="fa-solid fa-sun icon-forecast"></i>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <span class="opensource">
+          <a
+            href="https://github.com/hkthomassen/weather-application"
+            target="_blank"
+          >
+            Open-source code</a
+          >
+          by Hanne Thomassen
+        </span>
       </div>
-    <span class="opensource"><a href="https://github.com/hkthomassen/weather-application" target="_blank">Open-source code</a> by Hanne Thomassen</span>
     </div>
     <script src="src/script.js"></script>
   </body>
