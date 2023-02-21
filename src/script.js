@@ -75,3 +75,30 @@ function getCurrentLocation(event) {
 
 let currentLocation = document.querySelector("#current-location-button");
 currentLocation.addEventListener("click", getCurrentLocation);
+
+// Forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+            <div class="col-2">
+            <div class="weekdays">${day}</div>
+                <i class="fa-solid fa-sun icon-forecast"></i>
+                <div class="weather-forecast-temperatures">
+                        <span class="weather-forecast-temperature-max"> 18° </span>
+                        <span class="weather-forecast-temperature-min"> 12° </span>
+                    </div>
+              </div>
+      `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
